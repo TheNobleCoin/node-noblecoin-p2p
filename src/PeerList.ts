@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-import { LevinPayloads } from 'turtlecoin-utils';
+import { LevinPayloads } from 'noblecoin-utils';
 import { EventEmitter } from 'events';
 import * as fs from 'fs';
 import * as path from 'path';
