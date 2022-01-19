@@ -4,7 +4,7 @@
 
 import { NetworkController } from './NetworkController';
 import { PeerList } from './PeerList';
-import { LevinPayloads } from 'turtlecoin-utils';
+import { LevinPayloads } from 'noblecoin-utils';
 import { Metronome } from 'node-metronome';
 import { Interfaces } from './Types';
 
@@ -19,19 +19,16 @@ import IPeer = Interfaces.IPeer;
 import PeerEntry = LevinPayloads.PeerEntry;
 
 /**
- * Peer-to-Peer class that allows us to connect to the TurtleCoin network directly
+ * Peer-to-Peer class that allows us to connect to the NobleCoin network directly
  */
 export class P2P extends NetworkController {
     private readonly m_defaultConnectionsCount: number;
     private readonly m_seedNodes: IPeer[] = [
-        { ip: '206.189.142.142', port: 11897 },
-        { ip: '145.239.88.119', port: 11999 },
-        { ip: '142.44.242.106', port: 11897 },
-        { ip: '165.227.252.132', port: 11897 },
-        { ip: '148.251.178.238', port: 11897 },
-        { ip: '45.32.138.7', port: 11897 },
-        { ip: '46.214.70.196', port: 11897 },
-        { ip: '94.113.119.122', port: 11897 }
+        { ip: '182.168.1.99', port: 11800 },
+        { ip: '192.168.1.51', port: 11800 },
+        { ip: '192.168.1.91', port: 11800 },
+        { ip: '192.168.1.39', port: 11800 },
+        { ip: '192.168.1.96', port: 11800 }
     ];
 
     private readonly m_peerlist: PeerList = new PeerList();
@@ -47,7 +44,7 @@ export class P2P extends NetworkController {
      */
     constructor (
         ip = '0.0.0.0',
-        port = 11897,
+        port = 11800,
         externalPort?: number,
         defaultConnectionsCount = 8,
         seedNodes?: IPeer[]
