@@ -22,7 +22,7 @@ export class NetworkServer extends EventEmitter {
      */
     constructor (
         ip = '0.0.0.0',
-        port = 11897,
+        port = 11800,
         exclusive = true
     ) {
         super();
