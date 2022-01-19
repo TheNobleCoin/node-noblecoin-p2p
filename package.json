@@ -1,7 +1,7 @@
 {
-  "name": "turtlecoin-p2p",
+  "name": "noblecoin-p2p",
   "version": "0.0.1",
-  "description": "Library designed to facilitate connecting directly the the TurtleCoin network",
+  "description": "Library designed to facilitate connecting directly the the NobleCoin network",
   "main": "dist/P2P.js",
   "types": "dist/P2P.d.ts",
   "files": [
@@ -18,7 +18,7 @@
     "mocha-test": "./node_modules/.bin/mocha --exit -r ts-node/register tests/tests.ts"
   },
   "keywords": [
-    "TurtleCoin",
+    "NobleCoin",
     "P2P",
     "Peer-to-Peer"
   ],
@@ -26,7 +26,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "node-metronome": "0.0.11",
-    "turtlecoin-utils": "^2.0.2",
+    "noblecoin-utils": "^2.0.2",
     "uuid": "^8.3.0"
   },
   "devDependencies": {
