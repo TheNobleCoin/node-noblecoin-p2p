@@ -5,7 +5,7 @@
 import { NetworkClient } from './NetworkClient';
 import { NetworkServer } from './NetworkServer';
 import { Socket } from './Socket';
-import { LevinPacket, LevinPayloads, LevinProtocol } from 'turtlecoin-utils';
+import { LevinPacket, LevinPayloads, LevinProtocol } from 'noblecoin-utils';
 import { EventEmitter } from 'events';
 import { Interfaces } from './Types';
 import * as UUID from 'uuid';
@@ -52,7 +52,7 @@ export class NetworkController extends EventEmitter {
      */
     constructor (
         ip = '0.0.0.0',
-        port = 11897,
+        port = 11800,
         externalPort?: number,
         maxIncomingConnections?: number
     ) {
