@@ -4,7 +4,7 @@
 
 import { Socket as NetworkSocket, AddressInfo } from 'net';
 import { EventEmitter } from 'events';
-import { LevinPacket } from 'turtlecoin-utils';
+import { LevinPacket } from 'noblecoin-utils';
 import { v4 } from 'uuid';
 
 /**
